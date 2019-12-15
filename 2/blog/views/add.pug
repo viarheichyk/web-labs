@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 2</title>
+        <link rel="stylesheet" href="/stylesheets/reset.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Лабораторная работа 2</h1>
+        </header>
+        <div class="content-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/add">Добавить запись</a></li>
+                    <li><a href="/logout">Выйти</a></li>
+                </ul>
+            </nav>
+            <main>
+                <form class="form" action="add" method="POST">
+                    <div class="form__item">
+                        <label>Название</label>
+                        <input class="form__field" type="text" name="title" required>
+                    </div>
+                    <div class="form__item">
+                        <label>Превью</label>
+                        <input class="form__field" type="text" name="preview" required>
+                    </div>
+                    <div class="form__item">
+                        <label>Текст</label>
+                        <input class="form__field" type="text" name="text" required>
+                    </div>
+                    <input class="button" type="submit" value="Сохранить"> <input class="button" type="reset" value="Очистить">
+                </form>
+            </main>
+        </div>
+        <footer>Вергейчик Александр Петрович</footer>
+    </body>
+</html>
