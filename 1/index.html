@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 1</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="questions.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Лабораторная работа 1</h1>
+        </header>
+        <div class="content-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="https://gstu.by">ГГТУ</a></li>
+                    <li><a href="https://fais.gstu.by">ФАИС</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div id="registration">
+                    <form name="registration-form" class="registration-form">
+                        <h2 class="form__title">Регистрация</h2>
+                        <div class="form__item">
+                            <label>Фамилия</label>
+                            <input type="text" class="form__field" id="surname" name="surname" required>
+                        </div>
+                        <div class="form__item">
+                            <label>Имя</label>
+                            <input type="text" class="form__field" id="name" name="name" required>
+                        </div>
+                        <div class="form__item">
+                            <label>Пол</label>
+                            <select id="gender" name="gender" class="form__list">
+                                <option>мужской</option>
+                                <option>женский</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label>Возраст</label>
+                            <input type="number" min="1" max="120" class="form__field" id="age" name="age" required>
+                        </div>
+                        <div class="form__item">
+                            <label>Логин</label>
+                            <input type="text" class="form__field" id="login" name="login" required>
+                        </div>
+                        <div class="form__item">
+                            <label>Пароль</label>
+                            <input type="password" class="form__field" id="password" name="password" required>
+                        </div>
+                        <div class="form__item">
+                            <label>Email</label>
+                            <input type="email" class="form__field" id="email" name="email" required>
+                        </div>
+                        <div class="form__item">
+                            <label>Телефон</label>
+                            <input type="tel" class="form__field" id="phone" name="tel" required>
+                        </div>
+                        <div class="form__item">
+                            <label>Должность</label>
+                            <select id="position" name="position" class="form__list">
+                                <option>Начальник</option>
+                                <option>Рабочий</option>
+                                <option>Программист</option>
+                                <option>Бухгалтер</option>
+                                <option>Охранник</option>
+                            </select>
+                        </div>
+                        <input type="submit" name="submit" id="submit" class="button button--good">
+                        <input type="reset" class="button button--bad">
+                    </form>
+                </div>
+                <div id="test">
+                    <div class="question"></div>
+                    <button id="answer_next" class="button button--good">Вперед</button>
+                    <button id="answer_prev" class="button button--bad">Назад</button>
+                </div>
+                <div id="result">
+                    <h2 class="form__title">Результат</h2>
+                    
+                </div>
+            </main>
+        </div>
+        <footer>Вергейчик Александр Петрович</footer>
+    </body>
+</html>
