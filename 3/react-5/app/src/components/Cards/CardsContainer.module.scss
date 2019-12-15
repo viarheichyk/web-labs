@@ -1,0 +1,27 @@
+@import './CardsMixin.scss';
+
+.goods_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0 0 0;
+
+    &:after {
+        content: '';
+        width: 420px;
+
+        @include cardItemSizes;
+    }
+
+}
+
+.addCardLink {
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+
+    &:hover {
+        color: #00c8c8;
+    }
+}

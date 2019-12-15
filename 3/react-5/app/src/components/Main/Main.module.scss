@@ -1,0 +1,37 @@
+.main {
+    margin-bottom: 39px;
+    flex-grow: 1;
+
+    @media screen and (max-width: 2049px) {
+        padding: 0 10px;
+    }
+}
+
+.goods_filter {
+    margin-bottom: 58px;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item 
+    {
+        display: inline-block;
+        letter-spacing: -2px;
+        margin-right: 38px;
+
+        &:not(:first-child) {
+            margin-left: 5px;
+        }
+    
+        a{
+            text-transform: uppercase;
+            color: #222;
+            font-size: 13px;
+
+            &:hover {
+                color: #00c8c8;
+            }
+        }
+    }
+}

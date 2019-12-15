@@ -1,0 +1,36 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    border-bottom: 1px solid #eee
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1780px;
+}
